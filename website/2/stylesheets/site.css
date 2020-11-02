@@ -1,0 +1,295 @@
+/* @override 
+	http://sktchapp.com/2/stylesheets/site.css
+*/
+
+body {
+    margin: 0;
+	padding: 0;
+	background: #181818;
+	overflow: hidden;
+	color: #d1d1d1;
+	font: 1em 'Lekton', "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+div#free {
+	margin-right: 10px;
+	margin-top: 10px;
+	padding: 5px;
+	background: red;
+	float: right;
+	color: #fffffe;
+	z-index: +1000;
+}
+
+p {
+
+}
+
+a {
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+	color: #fffeff;
+	border: none;
+}
+
+a:hover {
+	color: #424242;
+}
+
+img{
+margin: 0;
+padding: 0;
+}
+
+#map {
+	background: url("../images/spinner-gr.gif") 50.5% 50.5% no-repeat;
+}
+
+#facebook2 {
+	padding: 20px;
+}
+
+#facebookiframe {
+	background-color: #fffffe;
+}
+
+#hideinfo{
+    position: absolute;
+    top: 20px;
+    left:20px;
+    width: 20px;
+    height: 20px;
+    z-index: 9999;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+#helpbutton{
+    position: absolute;
+    top: 10px;
+    right:20px;
+    z-index: 5555;
+    cursor: pointer;
+    color: #fff;
+	font: 25px Arial, "Helvetica Neue", Helvetica, Geneva, sans-serif;
+}
+
+#content {
+    position: absolute;
+	top: 20px;
+	left: 20px;
+	xwidth: 400px;
+    xheight: 580px;
+	z-index: 8888;
+	background-color: rgba(0,0,0,0.8);
+	overflow: hidden;
+}
+
+#footer {
+    position: absolute;
+	bottom: 20px;
+    position: fixed;
+	left: 20px;
+	z-index: 9999;
+	background-color: rgba(0,0,0,0.8);
+	
+}
+
+ul
+{
+list-style-type: none;
+padding: 0px;
+margin: 0px;
+}
+
+ul.line {
+	border-top: 5px solid #fffeff;
+	width: 200px;
+	margin-bottom: -10px;
+}
+
+h1 {
+	font-size: 100px;
+	color: #d5d5d5;
+	margin: 0px;
+	padding: 0px;
+}
+
+h3{
+	font-size: 15px;
+}
+
+floatright{
+    float: right;
+}
+
+floatleft{
+    float: left;
+}
+
+#titleC{
+    height: 80px;
+}
+
+#itunes{
+top:30px;
+right: 50px;
+position: absolute;
+}
+
+#line{
+margin-left: 40px;
+margin-right: 20px;
+height: 3px;
+background-color: #fff;
+width: 100px;
+margin-top: 15px;
+margin-bottom: 15px;
+}
+
+#title{
+top:16px;
+left: 25px;
+position: absolute;
+cursor: pointer;
+}
+
+#desc{
+margin-left: 40px;
+margin-right: 35px;
+font-size: 18px;
+font: 0.9em 'Lekton', "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+#helpimgs{
+margin-left: 40px;
+margin-right: 20px;
+}
+
+#images{
+margin-left: 40px;
+margin-right: 35px;
+margin-top: 10px;
+}
+
+#images img{
+margin-right: 10px;
+}
+
+#require{
+margin-left: 40px;
+margin-right: 35px;
+font-size: 16px;
+font: 0.9em 'Lekton', "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+#social{
+margin-top: 15px;
+margin-left: 40px;
+margin-right: 20px;
+}
+
+#social img{
+margin-right: 10px;
+border: none;
+}
+
+#credits{
+margin-left: 40px;
+margin-right: 35px;
+font: 0.9em 'Lekton', "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+#morecredits{
+display: none;
+margin-left: 40px;
+margin-right: 20px;
+}
+
+#backbutton{
+    xbackground-color: #888;
+    cursor: pointer;
+    font-size: 30px;
+    color: #fff;
+    
+    position: absolute;
+    top: -10px;
+    left:38px;
+    width: 20px;
+    height: 20px;
+    z-index: 99999;
+}
+
+#nextbutton{
+    xbackground-color: #888;
+    cursor: pointer;
+    font-size: 30px;
+    color: #fff;
+    
+    position: absolute;
+    top: -10px;
+    right: 0px;
+    width: 20px;
+    height: 20px;
+    z-index: 99999;
+}
+
+#follow{
+width: 100px;
+margin-top: -42px;
+margin-left: 210px;
+position: absolute;
+font-size: 25px;
+}
+
+#images{
+    cursor: pointer;
+}
+
+
+#helpimgs{
+    cursor: pointer;
+}
+
+#twitter{
+    cursor: pointer;
+}
+
+#facebook{
+    cursor: pointer;
+}
+
+/*FACEBOOK STUFF*/
+
+/*html#facebook.auto_resize_iframe. {
+
+}
+
+div.fan_box {
+	font: 12px Arial, "Helvetica Neue", Helvetica, Geneva, sans-serif !important;
+}
+
+div.connect_widget_text_summary.connect_text_wrapper {
+	float: left !important;
+	display: block !important;
+	top: -10px !important;
+	position: relative !important;
+}*/
+
+#twit {
+	font: 12px Arial, "Helvetica Neue", Helvetica, Geneva, sans-serif;
+}
+
+#press {
+	margin-top: 10px;
+	margin-left: 40px;
+	font-size: 14px;
+}
+
+
+
+
+
+
+

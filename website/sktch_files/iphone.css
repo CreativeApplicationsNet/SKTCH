@@ -1,0 +1,348 @@
+/* @override 
+	http://sktchapp.com/sktch_files/site.css
+	http://sktchapp.com/sktch_files/iphone.css
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 11px;
+	line-height: 1.3em;
+}
+
+#wrap{width:320px;}
+
+body {
+	font-family: Helvetica, "Lucida Grande", "Helvetica Neue", Helvetica, Geneva, sans-serif;
+	line-height: 1.4em;
+	overflow-x: hidden;
+	color: #d5d5d5;
+	-webkit-tap-highlight-color: #cadbf1;
+	text-align: center;
+	background: #1a1a1a url(http://sktchapp.com/sktch_files/background.jpg) repeat;
+max-width: 320px;
+}
+#page {
+	position: relative;
+	
+}
+#hdr {
+	padding: 0px 0;
+	height: 0px;
+	color: #999;
+}
+
+a {
+	color: #fffffe;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+h2.img {
+	margin-bottom: 6px;
+}
+
+a.fwd {
+	padding-right: 18px;
+	background: url(../sktch_files/arrow_yellow.gif) right 4px no-repeat;
+}
+
+sup {
+
+}
+
+#hdr a:hover {
+	color: #fff;
+}
+#pagehdr {
+width: 320px;
+}
+
+#pagehdr .center {
+	padding: 0px 0 00px;
+	}
+
+#ftr {
+	color: #999;
+		line-height: 15px;
+	padding: 0px 0 40px;
+}
+
+#ftr .center {
+	text-align: center;
+}
+
+#content {
+	background: #1a1a1a url(../sktch_files/bg_yellow.gif) repeat-x 0 0;
+	min-height: 400px;
+}
+#preview {
+	position: absolute;
+	top: -57px;
+	right: 0;
+}
+
+#preview_mov {
+	position: absolute;
+	top: 40px;
+	right: 40px;
+	z-index: 10;
+}
+
+.center {
+	text-align: left;
+	padding: 5px;
+	background: none;
+
+}
+
+#f-dashboard strong {
+
+}
+
+
+.intro {
+	line-height: 21px;
+	padding-top: 10px;
+	float: left;
+}
+
+.para {
+	line-height: 13px;
+	margin-right: 2px;
+	padding-top: 10px;
+	margin: 5px;
+	width: 300px;
+}
+
+.itslink {
+	display: block;
+	background: url(../sktch_files/sktchmain.gif) 0 0 no-repeat;
+	padding-top: 219px;
+	overflow: hidden;
+	height: 0;}
+
+.itslink:hover {
+	background-position: 0, 0px;
+	
+}
+
+.intro p {
+	margin-bottom: 8px;
+	width: 300px;
+	margin-left: 5px;}
+
+.intro p a {
+	text-decoration: underline;
+	color: #6a6a6a;
+}
+
+.intro p a:hover {
+	color: #424242;
+}
+
+.lft {
+	float: left;
+	margin: 5px 10px 5px 0;
+}
+
+#f-dashboard a.vimeo img.lft {
+	padding-bottom: 0px;
+}
+
+.rgt {
+	float: right;
+	margin: 5px 0 0 15px;
+}
+
+#signup {
+	width: 126px;
+	height: 0;
+	display: block;
+	float: left;
+	padding-top: 33px;
+	overflow: hidden;
+	background: url(../img/site/btn-signup-off.gif) 0 0 no-repeat;
+	margin: 15px 5px 5px -15px;
+}
+
+#signup:hover {
+	background-image: url(../img/site/btn-signup-on.gif);
+}
+a img {
+
+}
+
+#pagehdr div.center a img {
+	margin-bottom: 20px;
+}
+
+
+
+.features {
+	clear: left;
+	padding: 0px 0 0;
+	width: 320px;
+}
+
+div.videolink {
+	float: right;
+	color: #666;
+	margin-right: 80px;
+}
+.feature {
+	border: 1px solid #101010;
+	height: 170px;
+	float: left;
+	width: 276px;
+	line-height: 18px;
+	padding: 10px;
+	background-color: #424242;
+	clear: left;
+	margin: 5px;
+	font-size: 12px;
+}
+
+
+.parameters {
+	clear: left;
+	width: 320px;
+}
+.parameter {
+	border: 1px solid #000;
+  	-webkit-box-shadow: 1px 1px 3px #b6b49f;
+	height: 150px;
+	float: left;
+	margin: 0 20px 20px 0;
+	width: 94px;
+	line-height: 12px;
+	padding: 10px;
+	background-color: #424242;
+}
+
+.quote {
+	width: 296px;
+	float: left;
+	margin: 0 20px 20px 0;
+}
+
+.quote blockquote {
+	font-family: "Big Caslon", Georgia, "Times New Roman", Times, serif;
+	line-height: 24px;
+	text-align: center;
+}
+
+.quote cite {
+	font-style: normal;
+	color: #999;
+	text-align: right;
+	display: block;
+}
+
+.quote cite {
+	font-style: normal;
+	color: #999;
+}
+
+.feature .ss {
+	margin: 0 -5px;
+	width: 285px;
+	display: block;
+	padding-top: 85px;
+	background: url(../sktch_files/btn_ft_sync.gif) 0 0 no-repeat;
+	height: 0;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+.parameter .ss {
+	margin: 0 -5px;
+	width: 104px;
+	display: block;
+	padding-top: 85px;
+	background: url(../sktch_files/btn_ft_sync.gif) 0 0 no-repeat;
+	height: 0px;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+#f-dashboard .ss {
+	background-image: url(../sktch_files/btn_ft_dashboard.gif);
+	margin-bottom: 10px;
+}
+
+#f-comments .ss {
+	background-image: url(../sktch_files/btn_ft_comments.gif);
+	margin-bottom: 10px;
+}
+
+.subfeatures {
+	text-align: center;
+	color: #34738c;
+	padding: 10px 0 30px;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 10px;
+}
+
+.ss:hover {
+	background-position: 0 -85px;
+}
+
+html {
+}
+
+.qs {
+	padding: 60px 0 30px;
+}
+#questions {
+	position: absolute;
+	right: 0;
+	bottom: 10px;
+}
+
+#convinced {
+	position: absolute;
+	right: 0;
+	bottom: 82px;
+}
+
+.tweet a {
+	color: #fff;
+}
+
+.tweet li {
+	list-style: none;
+	width: 560px;
+}
+
+.tweet li img {
+	float: left;
+	margin-right: 10px;
+}
+
+#content div.center div.para p a {
+	color: #8d8d8d;
+}
+
+#content div.center div.para p a:hover {
+	color: #fffffe;
+}
+
+#ftr div.center p a {
+	color: #2d2d2d;
+}
+
+#ftr div.center p a:hover {
+	color: #fffffe;
+}
+
+#content div.center div.appstore a img {
+	float: right;
+	margin-top: -35px;
+	margin-right: 6px;
+
+}
+

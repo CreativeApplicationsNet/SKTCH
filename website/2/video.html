@@ -1,0 +1,34 @@
+<script type="text/javascript">
+ 
+    $('#backbutton').mousedown(function() {
+         loadContent("content.html", 400, 600);
+    });
+    
+       $('#nextbutton').mousedown(function() {
+         loadContent("img3.html", 500, 500);
+    });
+
+
+function loadContent(url, w, h){
+    $.ajax({
+        url: url,
+        success: function(html){
+            $("#content").html(html);
+            setOverlaySize(w, h);
+        }
+    });
+}
+
+function setOverlaySize(w, h){
+    $('#content').width(w);
+    $('#content').height(h);
+    $('#footer').width(w);
+    Cufon.replace('.cufon');
+}
+
+</script>
+
+
+<div id="backbutton" class="cufon"><<</div><div id="nextbutton" class="cufon">></div>
+
+<iframe src="http://player.vimeo.com/video/15156461?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff&amp;autoplay=1" width="640" height="480" frameborder="0"></iframe>

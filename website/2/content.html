@@ -1,0 +1,86 @@
+<script type="text/javascript">
+
+    $('#img1').mousedown(function() {
+         loadContent("img3.html", 500, 500);
+    });
+    
+    $('#img2').mousedown(function() {
+         loadContent("img1.html", 500, 500);
+    });
+    
+    $('#img3').mousedown(function() {
+         loadContent("img2.html", 500, 500);
+    });
+    
+    $('#helpimgs').mousedown(function() {
+         loadContent("help.html", 650, 430);
+    });
+    
+    $('#movie').mousedown(function() {
+         loadContent("video.html", 640, 480);
+    });
+
+    
+    $('#facebook').mousedown(function() {
+         loadContent("facebook.html", 400, 600);
+    });
+    
+    $('#twitter').mousedown(function() {
+         loadContent("twitter.html", 400, 600);
+    });
+
+function loadContent(url, w, h){
+    $.ajax({
+        url: url,
+        success: function(html){
+            $("#content").html(html);
+            setOverlaySize(w, h);
+        }
+    });
+}
+
+function setOverlaySize(w, h){
+    $('#content').width(w);
+    $('#content').height(h);
+    $('#footer').width(w);
+    Cufon.replace('.cufon');
+}
+
+</script>
+
+    <div id="titleC">
+    <div id="itunes" ><a href="http://itunes.apple.com/us/app/gd3d/id392600659?mt=8"><img src="images/appstore_k.png"/></a></div>
+    <div id="title" ><img src="images/sktchlogo.png"/></div>
+	</div>
+	
+	<div id="desc">
+	<p>
+	SKTCH is a generative drawing application for the iPhone / iPod Touch and iPad. Instead of adopting traditional "brush" based drawing, SKTCH is about presets, created by a number of digital artists around the globe. Whether you decide to sketch circles, meshes, networks or use any of the 16 presets available, be inspired by the endless possibilities of generative sketches and compositions you are able to make using SKTCH. Combine these with images from your photo library and layer for more complex compositions. Modify parameters in realtime, combine presets and see these amazing compositions come to life.<br></p>
+	</div>
+    <div id="line"></div>
+    <div id="helpimgs">
+    <div id="help"><img src="images/controls.png"/></div>
+    </div>
+    <!--<div id="line"></div>-->
+    <div id="images">
+    <img id="img1" src="images/gd3d01thumb.jpg"/><img id="img2" src="images/gd3d02thumb.jpg"/><img id="img3" src="images/gd3d03thumb.jpg"/><img id="movie" src="images/gd3d04vidthumb.jpg"/>
+    </div>
+    
+    <div id="require">
+    <p>Artists include Kim Asendorf, Andreas Müller, Eduard Prats Molner, Philip Whitfield, Martin Fuchs and Mike Tucker. Remaining presets are by Filip Visnjic.</p>
+    </div>
+    <div id="line"></div>
+    <div id="follow" class="cufon"><p><a href="feed.php" title="Subscribe to RSS"> <img src="images/rss_icon.png"/></a></p></div>
+    
+    
+    <div id="social">
+    <a href="#"><img id="facebook" src="images/fbimage.png"/></a>
+    <img id="twitter" src="images/twitterlogo.png" title="Follow on Twitter!"/>
+    </div>
+    
+    <div id="press">
+    <a href="press/GD3D_PressPack.zip">Download PressPack</a>
+    </div>
+    
+
+

@@ -1,0 +1,493 @@
+/* @override http://sktchapp.com/sktch_files/site.css */
+
+* {
+	margin: 0;
+	font-size: 1em;
+	padding: 0;
+}
+
+
+body {
+	font-family: Helvetica, "Lucida Grande", "Helvetica Neue", Helvetica, Geneva, sans-serif;
+	font-size: 12px;
+	line-height: 1.4em;
+	overflow-x: hidden;
+	color: #e6e6e6;
+	height: 100%;
+	text-align: center;
+	background-color: #000;
+}
+#page {
+	position: relative;
+	
+}
+#hdr {
+	padding: 15px 0;
+	height: 27px;
+	color: #999;
+	font-size: 11px;
+	line-height: 15px;
+}
+
+a {
+	color: #fffffe;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+h2.img {
+	margin-bottom: 6px;
+}
+
+a.fwd {
+	padding-right: 18px;
+}
+
+sup {
+	font-size: 9px;
+}
+
+#hdr a:hover {
+	color: #fff;
+}
+#pagehdr {
+	background-color: #000;
+}
+
+#pagehdr .center {
+	padding: 60px 0 40px;
+	position: relative;
+	height: 220px;
+
+}
+
+#ftr {
+	color: #999;
+	padding: 10px 0 60px;
+	font-size: 11px;
+	line-height: 15px;
+}
+
+#ftr .center {
+	text-align: center;
+}
+
+#content {
+	background: #121212 repeat-x 0 0;
+	min-height: 400px;
+	padding: 10px 0;
+	z-index: -1000;
+}
+
+#contentdownload {
+	background: #1a1a1a;
+	min-height: 400px;
+	padding: 15px;
+	overflow: hidden;
+	width: 860px;
+}
+
+
+#preview {
+	position: absolute;
+	top: -37px;
+left: 570px;
+	
+}
+
+#preview_mov {
+	position: absolute;
+	top: 40px;
+	right: 40px;
+	z-index: 10;
+}
+
+.center {
+	position: relative;
+	text-align: left;
+	width: 990px;
+	padding: 0 10px;
+	margin: 0 auto;
+
+
+	
+}
+
+.centerdownload {
+	text-align: left;
+	padding: 0 0px;
+	
+}
+
+#f-dashboard strong {
+
+}
+
+
+.intro {
+	font-size: 12px;
+	line-height: 21px;
+	margin-right: 450px;
+	padding-top: 10px;
+}
+
+.introdownload {
+	font-size: 12px;
+	line-height: 21px;
+	}
+
+#contentdownload div.center div.introdownload img.lft {
+	margin-top: -5px;
+}
+
+.para {
+	font-size: 11px;
+	line-height: 13px;
+	margin-right: 2px;
+	padding-top: 10px;
+}
+
+.itslink {
+	display: block;
+	background: url(../sktch_files/sktchmain.gif) 0 0 no-repeat;
+	padding-top: 219px;
+	overflow: hidden;
+	height: 0;
+	width: 530px;
+	
+}
+
+.itslink:hover {
+	background-position: 0 -219px;
+	
+}
+
+.intro p {
+	margin-bottom: 8px;
+}
+
+.intro p a {
+	text-decoration: underline;
+	color: #6a6a6a;
+}
+
+.intro p a:hover {
+	color: #424242;
+}
+
+.lft {
+	float: left;
+	margin: 5px 20px 40px 0;
+}
+
+.lftdownload {
+	float: left;
+	margin: -5px 10px 40px 0;
+}
+
+#f-dashboard a.vimeo img.lft {
+	padding-bottom: 20px;
+}
+
+.rgt {
+	float: right;
+	margin: 5px 0 0 15px;
+}
+
+#signup {
+	width: 126px;
+	height: 0;
+	display: block;
+	float: left;
+	padding-top: 33px;
+	overflow: hidden;
+	background: url(../img/site/btn-signup-off.gif) 0 0 no-repeat;
+	margin: 15px 5px 5px -15px;
+}
+
+#signup:hover {
+	background-image: url(../img/site/btn-signup-on.gif);
+}
+a img {
+	border: 0;
+}
+
+
+
+.features {
+	clear: left;
+	padding: 20px 0 0;
+	width: 1100px;
+	overflow: hidden;
+}
+
+#pagehdr div.center h1 {
+	margin-top: -20px;
+}
+
+div.downloadlinks {
+	margin-top: -10px;
+}
+
+#pagehdr div.center div.downloadlinks li {
+	list-style: none;
+	float: left;
+	margin-right: 25px;
+}
+
+
+
+.featuresdownload {
+	clear: left;
+	padding: 0px 0 0;
+	overflow: hidden;
+	line-height: 18px;
+}
+
+div.videolink {
+	float: right;
+	font-size: 10px;
+	color: #666;
+	margin-right: 80px;
+}
+.feature {
+	border: 1px solid #101010;
+	height: 220px;
+	float: left;
+	margin: 0 50px 20px 0;
+	width: 276px;
+	line-height: 18px;
+	padding: 10px;
+	background-color: #000;
+}
+
+
+.parameters {
+	clear: left;
+	padding: 20px 0 0;
+	width: 960px;
+	overflow: hidden;
+}
+.parameter {
+	border: 1px solid #000;
+  	-webkit-box-shadow: 1px 1px 3px #b6b49f;
+	height: 150px;
+	float: left;
+	margin: 0 20px 20px 0;
+	width: 94px;
+	line-height: 12px;
+	padding: 10px;
+	background-color: #424242;
+  	-webkit-box-shadow: 1px 1px 3px #000;
+	font-size: 10px;
+}
+
+.quote {
+	width: 296px;
+	float: left;
+	margin: 0 50px 20px 0;
+}
+
+.quotedownload {
+	width: 300px;
+	float: left;
+	margin: 0 20px 10px 0;
+}
+.quotedownloadm {
+	width: 150px;
+	float: left;
+	margin: 0 40px 20px 0;
+}
+
+
+
+
+.quote blockquote {
+	text-align: center;
+	font: italic 12px/20px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+.quote cite {
+	font-style: normal;
+	color: #999;
+	text-align: right;
+	display: block;
+}
+
+.quote cite {
+	font-style: normal;
+	color: #999;
+}
+
+.feature .ss {
+	margin: 0 -5px;
+	width: 285px;
+	display: block;
+	padding-top: 85px;
+	background: url(../sktch_files/btn_ft_sync.gif) 0 0 no-repeat;
+	height: 0;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+.feature .sd {
+background: #1a1a1a;
+padding-left: 5px;
+padding-right: 5px;
+padding-top: 3px;
+padding-bottom: 3px;
+	color: #fffffe;
+	float: left;
+	margin-top: -7px;
+}
+
+.feature .sd:hover {
+background: #313232;
+	text-decoration: none;
+}
+
+.parameter .ss {
+	margin: 0 -5px;
+	width: 104px;
+	display: block;
+	padding-top: 85px;
+	background: url(../sktch_files/btn_ft_sync.gif) 0 0 no-repeat;
+	height: 0px;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+#f-dashboard .ss {
+	background-image: url(../sktch_files/btn_ft_dashboard.gif);
+	margin-bottom: 10px;
+}
+
+#f-comments .ss {
+	background-image: url(../sktch_files/btn_ft_comments.gif);
+	margin-bottom: 10px;
+}
+
+.subfeatures {
+	text-align: center;
+	color: #34738c;
+	padding: 10px 0 30px;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 10px;
+}
+
+.ss:hover {
+	background-position: 0 -85px;
+}
+
+.qs {
+	padding: 60px 0 30px;
+}
+#questions {
+	position: absolute;
+	right: 0;
+	bottom: 10px;
+}
+
+#convinced {
+	position: absolute;
+	right: 0;
+	bottom: 82px;
+}
+
+.tweet a {
+	color: #fff;
+}
+
+.tweet li {
+	list-style: none;
+	width: 560px;
+}
+
+.tweet li img {
+	float: left;
+	margin-right: 10px;
+}
+
+#content div.center div.para p a {
+	color: #8d8d8d;
+}
+
+#content div.center div.para p a:hover {
+	color: #fffffe;
+}
+
+#ftr div.center p a {
+	color: #2d2d2d;
+}
+
+#ftr div.center p a:hover {
+	color: #fffffe;
+}
+
+#content div.center div.appstore a img {
+	float: right;
+	margin-top: -35px;
+	margin-right: 6px;
+	-webkit-box-shadow: 2px 2px 5px #333;
+
+}
+
+a#flickr_www {
+	display: none;
+}
+
+#flickr_badge_wrapper tbody {
+	margin: auto !important;
+}
+
+#flickr_badge_image1 a img  {
+	border: 1px solid white !important;
+}
+
+#flickr_badge_image2 a img {
+	border: 1px solid white !important;
+}
+
+#flickr_badge_image3 a img {
+	border: 1px solid white !important;
+}
+
+#flickr_badge_image4 a img {
+	border: 1px solid white !important;
+}
+
+#flickr_badge_image5 a img {
+	border: 1px solid white !important;
+}
+
+#flickr_badge_image6 a img {
+	border: 1px solid white !important;
+}
+
+#flickr_badge_image7 a img {
+	border: 1px solid white !important;
+}
+
+#flickr_badge_image8 a img {
+	border: 1px solid white !important;
+}
+
+#flickr_badge_image9 a img {
+	border: 1px solid white !important;
+}
+
+#flickr_badge_image10 a img {
+	border: 1px solid white !important;
+}
+
+
+
+#flickr_badge_uber_wrapper {
+	margin: auto;
+}
+
+
+

@@ -1,0 +1,31 @@
+ 
+<script type="text/javascript">
+
+    $('#backbutton').mousedown(function() {
+         loadContent("content.html", 400, 600);
+    });
+    
+       $('#nextbutton').mousedown(function() {
+         loadContent("video.html", 640, 480);
+    });
+
+function loadContent(url, w, h){
+    $.ajax({
+        url: url,
+        success: function(html){
+            $("#content").html(html);
+            setOverlaySize(w, h);
+        }
+    });
+}
+
+function setOverlaySize(w, h){
+    $('#content').width(w);
+    $('#content').height(h);
+    $('#footer').width(w);
+    Cufon.replace('.cufon');
+}
+
+</script>
+<div id="backbutton" class="cufon"><<</div><div id="nextbutton" class="cufon">></div>
+<img src="images/gd3d_img02.png" />

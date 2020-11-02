@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="imagetoolbar" content="no" />
+	<meta name="viewport" content="width=550" />
+	<meta name="viewport" content="height=800" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<link rel="apple-touch-icon" href="/custom_icon.png"/>
+	<link rel="apple-touch-startup-image" href="/startup.png">
+
+		<title>GD3D for the iPhone - This world is but a canvas to our imagination!</title>
+		
+		
+		<script type="text/javascript" src="javascripts/jquery.js"></script>
+		
+      
+		<script src="javascripts/gd3dmap.styles.js" type="text/javascript" charset="utf-8"></script>
+		
+		<link rel="stylesheet" href="stylesheets/gd3dmap.css" type="text/css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="stylesheets/site.css">
+		<link type="text/css" rel="stylesheet" media="only screen and (max-device-width: 480px)" href="stylesheets/siteiphone.css">
+		
+		<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://gd3d.net/feed.php" />
+		<link href='http://fonts.googleapis.com/css?family=Lekton&v2' rel='stylesheet' type='text/css'>
+	
+		
+		
+<script type="text/javascript">
+    
+$(window).bind("load", function() {
+    
+    $('#hideinfo').mousedown(function() {
+        $('#content').toggle();
+        $('#footer').toggle();
+        loadContent("content.html", 800, 580);
+         
+        if($('#content').is(':visible')){
+            $('#hideinfo').css("background-color","#fff");
+        }
+        if($('#content').is(':hidden')){
+            $('#hideinfo').css("background-color","#888");
+        }
+        
+    });
+    
+    $('#helpbutton').mousedown(function() {
+         $('#content').show();
+         $('#footer').show();
+        
+         loadContent("mapinfo.html", 600, 600);
+    });
+    
+    loadContent("content.html", 800, 580);
+    
+    loadFooter("footer.html");
+    
+    $('#footer').mouseover(function() {
+         $('#footer').css("height","150px");
+        $('#footer').css("background-color","rgba(0,0,0,1)");
+         $('#morecredits').show();
+        
+    });
+    $('#footer').mouseout(function() {
+        $('#footer').css("height","70px");
+        $('#morecredits').hide();
+        $('#footer').css("background-color","rgba(0,0,0,0.5)");
+    });
+    
+});
+
+function loadFooter(url){
+    $.ajax({
+        url: url,
+        success: function(html){
+            $("#footer").html(html);
+            Cufon.replace('.cufon');
+        }
+    });
+    $('#footer').css("height","70px");
+}
+
+function loadContent(url, w, h){
+    $.ajax({
+        url: url,
+        success: function(html){
+            $("#content").html(html);
+            setOverlaySize(w, h);
+        }
+    });
+}
+
+function setOverlaySize(w, h){
+    $('#content').width(w);
+    $('#content').height(h);
+    $('#footer').width(w);
+    Cufon.replace('.cufon');
+}
+
+
+</script>
+ 	
+</head>
+
+<div id="map">
+<iframe src="http://player.vimeo.com/video/10927126?title=1&autoplay=0&amp;byline=0&amp;portrait=0&amp;color=800000" width="100%" height="100%" frameborder="0"></iframe>
+<div>
+
+
+<body onload="setTimeout(function() { window.scrollTo(0, 1) }, 100);">
+
+
+<div id="hideinfo"></div>
+<div id="helpbutton" class="cufon"><img src="images/mapInfo.png"/></div>
+<div id="content"></div>
+<div id="footer"></div>
+
+
+</body>
+
+</html>

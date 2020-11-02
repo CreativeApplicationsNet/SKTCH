@@ -1,0 +1,37 @@
+ 
+<script type="text/javascript">
+
+    $('#backbutton').mousedown(function() {
+         loadContent("content.html", 400, 600);
+    });
+    
+    $('#nextbutton').mousedown(function() {
+         loadContent("img1.html", 500, 500);
+    });
+
+function loadContent(url, w, h){
+    $.ajax({
+        url: url,
+        success: function(html){
+            $("#content").html(html);
+            setOverlaySize(w, h);
+        }
+    });
+}
+
+function setOverlaySize(w, h){
+    $('#content').width(w);
+    $('#content').height(h);
+    $('#footer').width(w);
+    Cufon.replace('.cufon');
+}
+
+</script>
+
+<div id="backbutton" class="cufon"><<</div><div id="nextbutton" class="cufon">></div>
+
+<div id="facebook2">
+	<div id="facebookiframe">
+<iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FGD3D%2F152997768062794%3Fref%3Dsgm&amp;width=360&amp;connections=10&amp;stream=true&amp;header=false&amp;height=560" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:360px; height:560px;" allowTransparency="true"></iframe>
+	</div>
+</div>

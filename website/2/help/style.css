@@ -1,0 +1,26 @@
+body {
+	color: #000;
+	font-size: 9px;
+	font-family: Monaco, mono, "Courier New", Courier !important;
+	background: #fff;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+#container {
+	margin: 32px auto;
+	width: 300px;
+}
+
+.text {
+	margin: 0 0 16px 0;
+	text-align: center;
+}
+
+.image {
+	width: 160px;
+	margin: 0 auto 16px;
+}

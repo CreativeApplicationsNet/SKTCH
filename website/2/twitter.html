@@ -1,0 +1,51 @@
+ 
+<script type="text/javascript">
+
+    $('#backbutton').mousedown(function() {
+         loadContent("content.html", 400, 600);
+    });
+
+function loadContent(url, w, h){
+    $.ajax({
+        url: url,
+        success: function(html){
+            $("#content").html(html);
+            setOverlaySize(w, h);
+        }
+    });
+}
+
+function setOverlaySize(w, h){
+    $('#content').width(w);
+    $('#content').height(h);
+    $('#footer').width(w);
+    Cufon.replace('.cufon');
+}
+
+</script>
+
+<script type="text/javascript" >
+$(document).ready(function () {       
+       //twitter
+    $.getJSON('http://twitter.com/status/user_timeline/gd3dapp.json?count=12&callback=?', function(data){
+		$.each(data, function(index, item){
+			$('#twit').append('<div class="cufon"><p>' + item.created_at.split(" ")[1]+ " "
+			+ item.created_at.split(" ")[2]+ ": " + item.text.linkify() + '</p></div>');
+		});
+	});
+	String.prototype.linkify = function() {
+		return this.replace(/[A-Za-z]+:\/\/[A-Za-z0-9-_]+\.[A-Za-z0-9-_:%&\?\/.=]+/, function(m) {
+			return m.link(m);
+		});
+	};   
+});
+</script>
+
+<div id="backbutton" class="cufon"><<</div>
+
+<div id="desc" class="cufon">
+<br/><br/>
+<a href="http://twitter.com/gd3dapp"><img src="images/twitterlogo.png" title="Follow on Twitter!"/></a>
+<div id="twit" class="cufon"></div>
+</div>
+</div>

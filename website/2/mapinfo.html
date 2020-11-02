@@ -1,0 +1,53 @@
+
+
+<script type="text/javascript">
+ 
+    $('#backbutton').mousedown(function() {
+         loadContent("content.html", 400, 600);
+    });
+
+
+function loadContent(url, w, h){
+    $.ajax({
+        url: url,
+        success: function(html){
+            $("#content").html(html);
+            setOverlaySize(w, h);
+        }
+    });
+}
+
+function setOverlaySize(w, h){
+    $('#content').width(w);
+    $('#content').height(h);
+    $('#footer').width(w);
+    Cufon.replace('.cufon');
+}
+
+</script>
+
+
+    <div id="backbutton" class="cufon"><<</div>
+<div id="desc" class="cufon"><br/>
+<p><a href="map.google.com">Map powered by Google</a><br/>
+			Instructions:<br/>
+			<br/>
+			- Click on white markers to see tags<br/>
+			- Use location button so see tag on GoogleMaps<br/>
+			- Use tweet button so tweet this tag<br/>
+			- DoubleClick to Zoom-In<br/>
+			- CTRL + DoubleClick to Zoom-Out<br/>
+			- Mouse - RightClick to Zoom-Out<br/>
+			- Mouse - Use Trackwheel to Zoom<br/>
+			- MacBook - Drag with two fingers on trackpad up or down to Zoom<br/>
+			- Drag to Pan<br/>
+			- Click on points to see drawings<br/>
+			- Zoom right in to find more drawings at same location<br/>
+			- If at same location, map shows the latest drawings top<br/>
+			</p>
+			
+			<br/>
+			Thanks a lot to <a href="http://www.the389.com/">Andrey Yazev</a> for the GoogleMap integration.
+</div>
+
+
