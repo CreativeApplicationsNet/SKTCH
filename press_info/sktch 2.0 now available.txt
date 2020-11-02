@@ -1,0 +1,37 @@
+SKTCH 2.0 Press Release / 10.07.2011
+
+CreativeApplications.Net have just announced the release of version 2.0 of their generative drawing and illustration called 'SKTCH' for the iOS platform. Together with updated iPhone version, this release also arrives to the iPad, bundled as as a separate application and offering the same excellent generative drawing experience. 
+
+Instead of adopting traditional "brush" based drawing, SKTCH is about presets created by a number of digital artists around the globe. SKTCH allows you to create circles, meshes, networks using any of the 14 presets available. Each preset includes a set of variable which can be adjusted in the settings panel. These allow individual presets to taken on a whole new look from adjusting even the smallest values. Presets can be overlaid, switch on/off allowing new, rich compositions to come to life. Together with Image Import feature from your Photo Library, SKTCH becomes a collage of vector and image. 
+
+Major new feature in version 2.0 is the 3D mode. This mode allows you to rotate around your sketches and adjust new parameters which transform them in three dimensions. 
+
+Other updates include a revamped UI, now utilising Apple's own UIKit, two additional new presets (a total of 16 now), Retina display support for iPhone 4 and a whole lot more small improvements. 
+
+Artist that donated presets include Kim Asendorf, Andreas Müller, Eduard Prats Molner, Philip Whitfield, Martin Fuchs and Mike Tucker. Remaining presets are by Filip Visnjic.
+
+Created and Published by CreativeApplications.Net
+
+Developed with openFrameworks, an open source C++ toolkit.
+
+For more information, see http://sktchapp.com
+For more examples, see our group on Flickr http://www.flickr.com/groups/sktch/
+
+Download iPhone Version:
+http://itunes.apple.com/us/app/sktch/id369434236?mt=8&ls=1
+
+Download iPad Version:
+http://itunes.apple.com/us/app/sktch-for-ipad/id448014845?mt=8&ls=1
+
+What others say:
+
+New favourite drawing app! - ★★★★★
+When I first started playing with it, I was thinking "Meh, pretty cool", but as soon as I started mixing presets and experimenting with multitouch this app instantly jumped to a whole new level of creativity. Can't wait to see more presets out of this but I'm more than satisfied with the ones it has now!
+—SomeLamp
+US AppStore Review
+
+Worth Every Penny - ★★★★★
+The title says it all. At first, I wasn't sure if I would like this app. I thought it would be just another one of those drawing apps but I was wrong. From experimenting with the presets to changing the colors to adding a custom background, I knew that this was a unique app that had a lot of potential. I want to thank the developer or developers who made this app.
+—Videogod97
+US AppStore Review
+
